@@ -4,21 +4,13 @@ from sklearn.pipeline import Pipeline
 from sklearn.datasets import fetch_20newsgroups
 from sklearn import metrics
 import joblib
-
-CAT = [
-    "rec.autos",
-    "rec.motorcycles",
-    "rec.sport.baseball",
-    "rec.sport.hockey",
-    "sci.crypt",
-    "sci.electronics",
-    "sci.med",
-    "sci.space",
-]
+from api import CAT
 
 if __name__ == "__main__":
     # Just grab the training set:
-    newsgroups_train = fetch_20newsgroups(subset="train", categories=CAT)
+    newsgroups_train = fetch_20newsgroups(
+        subset="train", categories=CAT, shuffle=True, random_state=42
+    )
 
     # Create our processing pipeline and train it
     text_clf = Pipeline(

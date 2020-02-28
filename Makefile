@@ -3,10 +3,10 @@
 build: ## Build the docker image
 	@docker-compose build
 
-run: ## Run locally
+run: create-model ## Run locally
 	@docker-compose up
 
-create-model: ## Run the training script to create a pickle file
+create-model: build ## Run the training script to create a pickle file
 	@docker-compose run --rm web python create_model.py
 
 #################################################################################
