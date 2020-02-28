@@ -1,0 +1,4 @@
+# Here we ignore our pickle file, we don't want this embedded in our docker image
+# When running locally through docker-compose we'll get it through a volume mount.
+# If this were to be deployed we'd want to host this somewhere, ie, GCS/S3
+*.pkl
