@@ -1,7 +1,7 @@
 # Machine Learning Inference API Example - Flask + Scikit-Learn + Docker
 This repository contains an example machine learning inference API to serve a scikit-learn
 model using Flask and Docker. It is based on [this blog post](https://unsupervisedpandas.com/python/deploying-machine-learning-models/)
-and is intended as supporting material for [this talk at PyTennessee 2020](https://2020.pytennessee.org/talks/deploying-machine-learning-models-with-flask-and-docker)
+and is intended as supporting material for [this talk at PyTennessee 2020](https://2020.pytennessee.org/talks/deploying-machine-learning-models-with-flask-and-docker) whose slides are [here](https://docs.google.com/presentation/d/1aL9tPMkXw9AVvccuAPW4uToIxAjNe2GsniqTzNM0otk/edit?usp=sharing)
 
 ## Getting Started
 This repository utilizes a Makefile for easy interaction. You can view available commands by
